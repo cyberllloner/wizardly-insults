@@ -9,7 +9,7 @@ def generate_random_insult():
         return response.text
 
 def style_text(value):
-    return "\nOne Message From The Great Wizard:\n\n" + f'\033[1m"{fill(value, width=50)}"\033[0m'
+    return "\nOne Message From The Great Wizard:\n\n" + f'"{fill(value, width=50)}"'
 
 def main():
     insult = style_text(generate_random_insult())
