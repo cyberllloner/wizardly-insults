@@ -1,21 +1,19 @@
-from requests import get
+import requests
+from textwrap import fill
 
 def generate_random_insult():
-    response = get("https://insult.mattbas.org/api/insult")
+    response = requests.get("https://insult.mattbas.org/api/insult")
     if response.status_code != 200:
         return "Unfortunately, now my creativity is lost, and I can't insult :)"
     else:
-        random_insult = response.text
-        return random_insult
+        return response.text
 
-def add_text_border(text):
-    dash = len(text) * "-"
-    transformed_text = dash + "\n" + text + "\n" + dash
-    return transformed_text
+def style_text(value):
+    return "\nOne Message From The Great Wizard:\n\n" + f'\033[1m"{fill(value, width=50)}"\033[0m'
 
 def main():
-    text = add_text_border(generate_random_insult())
-    wizard_ascii_art = r'''
+    insult = style_text(generate_random_insult())
+    wizard_ascii_art = '''
     (\.   \      ,/)
     \(   |\     )/
     //\  | \   /\\
@@ -23,7 +21,7 @@ def main():
     \/\  ####  /\/
         `##'
     '''
-    result = text + "\n" + wizard_ascii_art
-    print(result)
+    print(insult + "\n" + wizard_ascii_art)
 
-main()
+if __name__ == "__main__":
+    main()
