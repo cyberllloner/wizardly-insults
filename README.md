@@ -1,4 +1,4 @@
-# Wizardly Insults 🧙‍♂️
+# Wizardly Insults🧙‍♂️
 
 <div style="text-align: center;">
   <img src="https://github.com/cyberllloner/wizardly-insults/raw/main/wizardly-insults.png" alt="Wizardly Insult">
