@@ -43,8 +43,6 @@ python3 wizardly-insults.py
 
 - Thanks to [Matt Bas](https://insult.mattbas.org/) for providing the insult API
 
-Enjoy your wizardly insults! 🧙‍♂️
-
 ## License
 
 GNU General Public License v3.0. See the [LICENSE](LICENSE) file for more details.
