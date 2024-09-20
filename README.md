@@ -4,7 +4,7 @@
   <img src="https://github.com/cyberllloner/wizardly-insults/raw/main/wizardly-insults.png" alt="Wizardly Insult">
 </div>
 
-Welcome to **Wizardly Insults**, a Python app that creates random insults using an external API. I built this app to improve my programming skills and gain practical experience with the `requests` library, making learning more enjoyable.
+Welcome to **Wizardly Insults**, a Python app that creates random insults using an external API. **I built this app to improve my programming skills and gain practical experience with the `requests` library,** making learning more enjoyable.
 
 ## Requirements
 
